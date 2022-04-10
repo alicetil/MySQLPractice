@@ -11,12 +11,8 @@ country varchar(50) not null,
 postcode varchar(10) not null);
 
 alter table address add city varchar(20);
-
-insert into address values(1, 'Flat 1', '321 High Street', 'Surrey', 'UK', 'RH4 2LB');
-insert into address(address1, county, country, postcode) values('27 Strode Road', 'London', 'UK', 'NW10 2NN');
 insert into address(address1, county, country, postcode) values('123 London Road', 'Derbyshire', 'UK', 'SL 3AG');
-insert into address(address1, county, country, postcode) values('74 Long Lane', 'Middlesex', 'UK', 'UB10 8SY');
-insert into address(address1, county, country, postcode) values('48 Parkland Drive', 'Derbyshire', 'UK', 'DE73 6WL');
+
 
 create table bank_details(
 id int primary key auto_increment,
